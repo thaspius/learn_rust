@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug Lesson1",
+            "args": [],
+            "program": "${workspaceFolder}/lesson1_hello_world/target/debug/lesson1_hello_world",
+            "cwd": "${workspaceFolder}",
+            "stopOnEntry": false,
+            "sourceLanguages": ["rust"],
+            "sourceMap": {
+              "/rustc/*": "${env:HOME}/.cargo/bin/rustc"
+            }
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug Lesson2",
+            "args": [],
+            "program": "${workspaceFolder}/lesson2_variables/target/debug/lesson2_variables",
+            "cwd": "${workspaceFolder}",
+            "stopOnEntry": false,
+            "sourceLanguages": ["rust"],
+            "sourceMap": {
+              "/rustc/*": "${env:HOME}/.cargo/bin/rustc"
+            }
+        },
+    ]
+}
